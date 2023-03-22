@@ -54,21 +54,20 @@ li {
   color: white;
   font-size: 13px;
   font-weight: bold;
-  transition:all .25s;
+  transition: all 0.25s;
 }
 
-.myresume-btn:hover{
+.myresume-btn:hover {
   /* background-color: rgb(49, 170, 207) ; */
 
-  background-color:rgb(53, 158, 172);
-}
-
-.myblog-btn:hover{
   background-color: rgb(53, 158, 172);
 }
 
+.myblog-btn:hover {
+  background-color: rgb(53, 158, 172);
+}
 
-a > img {
+header img {
   width: 60px;
   height: 60px;
   border: 2px solid rgb(161, 255, 224);
@@ -136,12 +135,20 @@ textarea {
 }
 
 /* mobile-phone */
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 320px) {
   header {
     height: 80px;
     z-index: 999;
   }
 
+  header > img {
+    height: 60px;
+    width: 60px;
+    border: 2px solid rgb(161, 255, 224);
+    border-radius: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
   nav {
     margin-top: 10px;
     height: 50px;
@@ -225,6 +232,16 @@ textarea {
     color: white;
     font-size: 13px;
     font-weight: bold;
+  }
+
+  .myresume-btn {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+
+  .myblog-btn {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
   }
 
   .skills-container {
@@ -340,12 +357,43 @@ textarea {
   .project-container {
     text-align: center;
     background: whitesmoke;
-    padding-bottom: 20px;
+    /* padding-bottom: 100px; */
   }
   .projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    gap: 60px;
+  }
+
+  .project1 {
+    height: 200px;
+    width: 200px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+
+  .project1 > p {
+    font-size: 20px;
+  }
+
+  .project2 {
+    height: 200px;
+    width: 200px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+
+  .project3 {
+    height: 200px;
+    width: 200px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+  .project4 {
+    height: 200px;
+    width: 200px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
   }
 
   #footer {
@@ -505,8 +553,8 @@ textarea {
 
   article {
     text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
     padding-bottom: 40px;
     background: whitesmoke;
   }
@@ -641,12 +689,13 @@ textarea {
   .project-container {
     text-align: center;
     background: whitesmoke;
-    padding-bottom: 20px;
+    padding-bottom: 70px;
   }
   .projects {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 10px;
+    justify-items: center;
   }
 
   #footer {
@@ -800,14 +849,10 @@ textarea {
 
   article {
     text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
     padding-bottom: 40px;
     background: whitesmoke;
-  }
-
-  article {
-    text-align: center;
   }
 
   article .myresume-btn {
@@ -965,7 +1010,7 @@ textarea {
   .project-container {
     text-align: center;
     background: whitesmoke;
-    padding-bottom: 20px;
+    padding-bottom: 70px;
   }
   .projects {
     display: grid;
@@ -1045,13 +1090,14 @@ textarea {
     cursor: pointer;
   }
 
-  
   .letsstay-container {
     padding-top: 40px;
   }
   .logo-container {
     display: flex;
     justify-content: space-evenly;
+    padding-left: 100px;
+    padding-right: 100px;
   }
 
   .email-logo,
@@ -1071,12 +1117,4 @@ textarea {
   .fa-twitter {
     padding-top: 8px;
   }
-
-
-
-
-
-
-
-  
 }
