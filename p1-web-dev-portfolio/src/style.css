@@ -363,6 +363,9 @@ textarea {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
   }
 
   .project1 {
@@ -381,6 +384,7 @@ textarea {
     width: 200px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
       rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    font-size: 20px;
   }
 
   .project3 {
@@ -696,6 +700,10 @@ textarea {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 10px;
     justify-items: center;
+  }
+
+  .project2 > p {
+    font-size: 20px;
   }
 
   #footer {
@@ -1016,6 +1024,10 @@ textarea {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 10px;
+  }
+
+  .project2 > p {
+    font-size: 20px;
   }
 
   #footer {
